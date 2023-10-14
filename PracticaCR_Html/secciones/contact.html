@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Juan</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Página principal</a></li>
+          <li><a href="./about.html">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contacto</h2>
+      <p>Email: InariIzar@sitio.com</p>
+      <p>Teléfono: +34655123456</p>
+      <address>
+        <form>
+          <fieldset>
+            <legend>Datos de contacto:</legend>
+            <ul>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" />
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="off"
+                  required
+                />
+              </li>
+              <li>
+                <label for="observaciones">Comentario:</label>
+                <textarea
+                  name="observaciones"
+                  id="observaciones"
+                  cols="30"
+                  rows="10"
+                  minlength="3"
+                  maxlength="50"
+                  placeholder="Escribe aquí lo que quieras"
+                >
+               Escribe aquí tu comentario (de 3 a 50 caracteres)</textarea
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </form>
+        <form>
+          <fieldset>
+            <legend>Otros datos de interés:</legend>
+            <ul>
+              <li>
+                <label for="Teléfono">Teléfono:</label>
+                <input type="tel" id="Teléfono" />
+              </li>
+              <li>
+                <label for="num">Número favorito: entre 1 y 20</label>
+                <input type="number" id="num" min="1" max="20" />
+              </li>
+              <li>
+                <label for="color">Color favorito:</label>
+                <select name="color" id="color">
+                  <option value="black">Negro</option>
+                  <option value="blue">Azul</option>
+                  <option value="yelow">Amarillo</option>
+                  <option value="green">Verde</option>
+                </select>
+              </li>
+              <li>
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" name="birthdate" id="birthdate" />
+              </li>
+              <li>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="password" id="pass" />
+              </li>
+              <li>
+                <label for="check"
+                  >¿Está de acuerdo con los términos y condiciones?</label
+                ><input
+                  type="checkbox"
+                  id="check"
+                  name="check"
+                  value="ok"
+                  checked
+                />
+              </li>
+              <li>
+                <p>¿Quieres ser mi amig@?</p>
+                <label for="si">si</label>
+                <input type="radio" name="amigo" id="si" value="si" />
+                <label for="no">no</label>
+                <input type="radio" name="amigo" id="no" value="no" />
+              </li>
+              <li>
+                <label for="comidafavorita">Comida favorita</label>
+                <select name="comida favorita" id="comidafavorita">
+                  <option selected value="comida favorita">------</option>
+                  <option value="brócoli">Brócoli con patatas</option>
+                  <option value="Lentejas">Lentejas</option>
+                  <option value="Seitan">Guisado de Seitán</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </address>
+    </main>
+
+    <footer>©️Juan de la Morena 2023</footer>
+  </body>
+</html>
